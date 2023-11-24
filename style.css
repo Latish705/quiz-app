@@ -24,7 +24,7 @@ body {
 
 .main-container {
   background-color: white;
-  height: 100%;
+  height: 500px;
   width: 100%;
   max-width: 500px;
   display: flex;
@@ -52,6 +52,7 @@ body {
   width: 100%;
   height: 100%;
   gap: 20px;
+  justify-content: space-between;
 }
 
 .answers:hover {
@@ -89,14 +90,49 @@ input {
 
 .next-button {
   display: flex;
-  padding: 10px;
+  padding: 20px;
   margin: 20px 10px;
+  background-color: #0802a3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
 }
 
+.next-button:active {
+  transform: translateY(5px);
+}
 .correct-answer {
   background-color: rgb(148, 255, 148);
 }
 
 .wrong-answer {
   background-color: rgb(255, 142, 142);
+}
+
+.list {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.list li {
+  list-style: none;
+  border: 2px solid black;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.list li #correct {
+  color: rgb(118, 169, 41);
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.list li #incorrect {
+  color: rgb(252, 117, 117);
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.progress-bar {
+  padding-bottom: 20px;
 }
